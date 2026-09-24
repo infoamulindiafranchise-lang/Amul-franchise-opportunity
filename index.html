@@ -671,12 +671,6 @@
       margin: 18px 0;
     }
 
-    .payment {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      align-items: center;
-    }
 
     .qr {
       border: 1px solid var(--line);
@@ -701,20 +695,6 @@
       word-break: break-all;
     }
 
-    .timer {
-      border-radius: 18px;
-      background: var(--navy);
-      padding: 17px;
-      text-align: center;
-      color: var(--white);
-      margin: 18px 0;
-    }
-
-    .timer b {
-      display: block;
-      font: 900 2.5rem Montserrat, Arial, sans-serif;
-      color: var(--yellow);
-    }
 
     .success-icon {
       width: 74px;
@@ -876,9 +856,6 @@
         padding: 21px;
       }
 
-      .payment {
-        grid-template-columns: 1fr;
-      }
 
       .flow-card {
         padding: 23px;
@@ -1415,7 +1392,7 @@
             <strong>Visitor feedback highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1437,7 +1414,7 @@
             <strong>Customer experience highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1458,7 +1435,7 @@
             <strong>Outlet experience highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1480,7 +1457,7 @@
             <strong>Product display highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1502,7 +1479,7 @@
             <strong>Service highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1524,7 +1501,7 @@
             <strong>Everyday convenience highlight</strong>
 
             <small>
-                — replace with verified, permission-cleared
+              Display example — replace with verified, permission-cleared
               reviews before publishing.
             </small>
           </article>
@@ -1533,8 +1510,8 @@
 
         <div class="review-note">
           <i class="fa-solid fa-circle-info"></i>
-These reviews are genuine and verified testimonials from official Amul franchise partners who have successfully taken a franchise.
-
+          Use authentic customer reviews only after verifying the source,
+          permission and required attribution.
         </div>
 
       </div>
@@ -1634,11 +1611,11 @@ These reviews are genuine and verified testimonials from official Amul franchise
         <div class="section-head">
           <div class="eyebrow" style="color: var(--yellow);">
             <i class="fa-solid fa-file-pen"></i>
-            Registration Form
+            Registration enquiry
           </div>
 
           <h2 class="section-title">
-            Complete your Franchise registration.
+            Complete your registration enquiry.
           </h2>
 
           <p>
@@ -1811,8 +1788,9 @@ These reviews are genuine and verified testimonials from official Amul franchise
             <input id="consent" type="checkbox" required>
 
             <label for="consent">
-I consent to the collection and use of these details for registration processing. Any required documents will be submitted directly to the company via email.
-
+              I consent to the collection and use of these details for enquiry
+              follow-up. I understand that sensitive identity documents are
+              not required at this enquiry stage.
             </label>
           </div>
 
@@ -1834,86 +1812,6 @@ I consent to the collection and use of these details for registration processing
 
   </main>
 
-  <!-- Registration Page -->
-
-  <section class="flow-page" id="registrationPage">
-    <div class="flow-card">
-
-      <div class="steps">
-        <div class="step active">1. Apllication</div>
-        <div class="step active">2. Registration</div>
-        <div class="step">3. Confirmation</div>
-      </div>
-
-      <div class="eyebrow">
-        <i class="fa-solid fa-receipt"></i>
-        Registration
-      </div>
-
-      <h1>Registration details</h1>
-
-      <p style="color: var(--muted); margin-top: 10px;">
-        Your registration request has been received. A registration fee of ₹25,000 is payable exclusively via UPI using the QR code below. Please email the payment details and UTR/Transaction ID to info@amulfranchiseindia.com.
-
-
-      </p>
-
-      <div class="warning">
-        <strong>Amul Franchise Registration</strong>
-        <br>
-        The UPI ID and QR code below are official, verified, and fully functional for payments.
-
-      </div>
-
-      <div class="payment">
-
-        <div class="qr">
-          <strong>Amul India</strong>
-
-          <img id="amulQr" alt="Amul QR code" src="https://i.ibb.co/v4BMRkTK/ytrewrtyui.jpg">
-          <div class="upi">
-            UPI ID: amulindiafranchise@axl
-          </div>
-        </div>
-
-        <div>
-          <h3 style="font: 700 1.3rem Montserrat, Arial, sans-serif;">
-            Registration Details
-          </h3>
-
-          <p style="font-size: 0.88rem; color: var(--muted); margin-top: 8px;">
-            Connect to the official merchant-acquired payment gateway after secure business verification.
-
-          </p>
-
-          <div class="timer">
-            <span style="font-size: 0.72rem; color: #c1ccdb; text-transform: uppercase;">
-              Registration timer
-            </span>
-
-            <b id="timer">15:00</b>
-          </div>
-
-          <div class="actions">
-            <button class="btn btn-light" onclick="copyamulUpi()">
-              Copy Amul UPI
-            </button>
-
-            <button class="btn btn-red" onclick="showConfirmation()">
-              Continue
-            </button>
-          </div>
-
-          <p
-            id="copyMessage"
-            style="font-size: 0.75rem; color: var(--green); margin-top: 10px;"
-          ></p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Confirmation Page -->
 
   <section class="flow-page" id="confirmationPage">
@@ -1921,8 +1819,7 @@ I consent to the collection and use of these details for registration processing
 
       <div class="steps">
         <div class="step active">1. Enquiry</div>
-        <div class="step active">2. Registration</div>
-        <div class="step active">3. Confirmation</div>
+        <div class="step active">2. Confirmation</div>
       </div>
 
       <div class="success-icon">
@@ -1933,28 +1830,16 @@ I consent to the collection and use of these details for registration processing
         Enquiry received
       </div>
 
-      <h1>Thank you for registering your enquiry.</h1>
+      <h1>Registration Submitted Successfully! ✓</h1>
 
       <p style="color: var(--muted); margin-top: 10px;">
-        Your registration enquiry has been recorded for follow-up.
+        Your registration enquiry has been submitted successfully. Our team will contact you soon.
       </p>
 
-      <div class="ref">
-        Reference:
-        <span id="reference"></span>
-      </div>
-
       <div class="confirmation">
-        <strong>Important:</strong>
-        This confirmation does not mean a franchise has been approved or
-        awarded.
+        <strong>Thank you for your interest.</strong><br>
+        Please wait while we redirect you back to the website.
       </div>
-
-      <br>
-
-      <button class="btn btn-red" onclick="showHome()">
-        Back to website
-      </button>
 
     </div>
   </section>
@@ -1968,7 +1853,7 @@ I consent to the collection and use of these details for registration processing
   <!-- WhatsApp contact -->
   <a
     class="wa"
-    href="https://wa.me/919762136981"
+    href="https://wa.me/919999999999"
     target="_blank"
     rel="noopener"
     aria-label="WhatsApp"
@@ -1978,12 +1863,8 @@ I consent to the collection and use of these details for registration processing
 
   <script>
     const home = document.getElementById("homePage");
-    const registration = document.getElementById("registrationPage");
     const confirmation = document.getElementById("confirmationPage");
     const form = document.getElementById("leadForm");
-
-    let interval;
-    let seconds = 900;
 
     const menuButton = document.getElementById("menuButton");
     const mobileNav = document.getElementById("mobileNav");
@@ -1999,7 +1880,7 @@ I consent to the collection and use of these details for registration processing
     });
 
     function showPage(page) {
-      [home, registration, confirmation].forEach((section) => {
+      [home, confirmation].forEach((section) => {
         section.style.display = "none";
       });
 
@@ -2012,68 +1893,17 @@ I consent to the collection and use of these details for registration processing
     }
 
     function showHome() {
-      clearInterval(interval);
-
       showPage(home);
 
       history.replaceState({}, "", location.pathname);
     }
 
-    function showRegistration() {
-      showPage(registration);
-
-      history.replaceState({}, "", "#registration");
-
-      startTimer();
-    }
-
     function showConfirmation() {
-      clearInterval(interval);
-
-      document.getElementById("reference").textContent =
-        "REG-" + Date.now().toString().slice(-8);
-
       showPage(confirmation);
 
       history.replaceState({}, "", "#confirmation");
     }
 
-    function startTimer() {
-      clearInterval(interval);
-
-      seconds = 900;
-
-      renderTimer();
-
-      interval = setInterval(() => {
-        seconds--;
-
-        renderTimer();
-
-        if (seconds <= 0) {
-          clearInterval(interval);
-        }
-      }, 1000);
-    }
-
-    function renderTimer() {
-      const minutes = String(Math.floor(seconds / 60)).padStart(2, "0");
-      const remainingSeconds = String(seconds % 60).padStart(2, "0");
-
-      document.getElementById("timer").textContent =
-        minutes + ":" + remainingSeconds;
-    }
-
-    function copyamulUpi() {
-      const demoUPI = "amulindiafranchise@axl";
-
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(demoUPI);
-      }
-
-      document.getElementById("copyMessage").textContent =
-        "UPI ID copied successfully.";
-    }
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -2101,11 +1931,14 @@ I consent to the collection and use of these details for registration processing
           throw new Error(result.message || "Submission failed");
         }
 
-        formMessage.textContent = "✓ Enquiry submitted successfully!";
+        formMessage.textContent = "✓ Submitted successfully. Our team will contact you soon.";
 
         setTimeout(() => {
-          showRegistration();
-        }, 900);
+          showConfirmation();
+          setTimeout(() => {
+            showHome();
+          }, 2500);
+        }, 700);
       } catch (error) {
         console.error("Web3Forms submission error:", error);
         formMessage.textContent =
@@ -2114,13 +1947,6 @@ I consent to the collection and use of these details for registration processing
       }
     });
 
-    document.getElementById("demoQr").src =
-      "https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=" +
-      encodeURIComponent("DEMO ONLY - NOT A REAL PAYMENT");
-
-    if (location.hash === "#registration") {
-      showRegistration();
-    }
 
     if (location.hash === "#confirmation") {
       showConfirmation();
